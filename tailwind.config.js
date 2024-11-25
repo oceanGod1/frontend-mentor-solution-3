@@ -2,7 +2,11 @@
 module.exports = {
   content: ["index.html", "**/*.{html,js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        main: ['Kumbh Sans','sans-serif']
+      },
+    },
   },
   plugins: [],
 }
