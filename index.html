@@ -30,16 +30,29 @@
         <img src="images/image-avatar.png" alt="user profile picture" class="w-7">
       </div>
     </nav>
-    <section class="col-span-3 h-[80vw] grid grid-cols-[1rem_auto_1fr_auto_1rem] items-center overflow-hidden">
-      <figure class="w-full h-full col-start-1 col-span-5 row-start-1"
-        style="background: url(images/image-product-1.jpg) center/cover;">
+    <section
+      class="product-image-holder col-span-3 h-[80vw] grid grid-cols-[1rem_auto_1fr_auto_1rem] items-center overflow-hidden relative">
+
+      <figure class="product w-full h-full absolute" style="background: url(images/image-product-1.jpg) center/cover;">
       </figure>
-      <img src="images/icon-previous.svg" alt="go to previous image icon"
-        class="w-3 h-3 p-3 box-content col-start-2 row-start-1 rounded-full bg-white">
 
-      <img src="images/icon-next.svg" alt="go to next image icon"
-        class="w-3 h-3 p-3 box-content col-start-4 row-start-1 rounded-full justify-self-end bg-white">
+      <figure class="product w-full h-full absolute right-full"
+        style="background: url(images/image-product-2.jpg) center/cover;">
+      </figure>
 
+      <figure class="product w-full h-full absolute right-full"
+        style="background: url(images/image-product-3.jpg) center/cover;">
+      </figure>
+
+      <figure class="product w-full h-full absolute right-full"
+        style="background: url(images/image-product-4.jpg) center/cover;">
+      </figure>
+
+      <input type="image" src="images/icon-previous.svg" alt="go to previous image icon"
+        class="previous-image w-3 h-3 p-3 box-content col-start-2 row-start-1 rounded-full bg-neutral1 relative">>
+
+      <input type="image" src="images/icon-next.svg" alt="go to next image icon"
+        class="next-image w-3 h-3 p-3 box-content col-start-4 row-start-1 rounded-full justify-self-end bg-neutral1 relative">
     </section>
     <!-- Collections
     Men
@@ -66,6 +79,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </div> -->
   </main>
+  <script src="app.js"></script>
 </body>
 
 </html>
