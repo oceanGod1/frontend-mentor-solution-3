@@ -71,7 +71,7 @@ const reusables = {
 
     document.body.insertAdjacentHTML('beforeend', `
       <div class="item-added-success-message w-screen fixed top-20 z-20">
-        <p class="w-4/5 m-auto p-4 rounded-lg text-center text-neutral1 text-xl font-bold bg-green-600">Item successfully added to cart</p>
+        <p class="w-4/5 m-auto p-4 rounded-lg text-center text-neutral1 text-[clamp(5vw calc(1rem + 2vw))] font-bold bg-green-600">Item successfully added to cart</p>
       </div>`
     );
     setTimeout(() => {
