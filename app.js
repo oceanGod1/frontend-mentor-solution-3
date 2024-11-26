@@ -3,7 +3,6 @@ const productImageHolder = document.querySelector('.product-image-holder');
 const productImage = document.querySelectorAll('.product');
 const previousImage = document.querySelector('.previous-image');
 const nextImage = document.querySelector('.next-image');
-
 const productImageArray = Array.from(productImage)
 let currentIndex = 0;
 
@@ -18,7 +17,6 @@ const productImageGen = (elem, method1, class1, method2, class2, method3) => {
 }
 
 productImageGen(nextImage, () => currentIndex < productImageArray.length - 1, 'left-full', () => currentIndex + 1, 'right-full', () => currentIndex++)
-
 productImageGen(previousImage, () => currentIndex > 0, 'right-full', () => currentIndex - 1, 'left-full', () => currentIndex--)
 
 
@@ -40,3 +38,21 @@ const countProduct = (elem, method1, method2) => {
 
 countProduct(increaseProductNumber, () => productIndex >= 0, () => productIndex++)
 countProduct(reduceProductNumber, () => productIndex >= 1, () => productIndex--)
+
+
+// Cart card
+const cartIcon = document.querySelector('.cart-icon');
+const cartCardHolder = document.querySelector('.cart-card-holder');
+const cartCard = document.querySelector('.cart-card');
+
+const toggleCartCard = (elem, toggle1, toggle2) => {
+  elem.addEventListener('click', (e) => {
+    if (e.target === elem) {
+      cartCardHolder.classList[toggle1]('hidden')
+      cartCardHolder.classList[toggle2]('grid')
+    }
+  })
+}
+
+toggleCartCard(cartIcon, 'remove', 'add')
+toggleCartCard(cartCardHolder, 'add', 'remove')

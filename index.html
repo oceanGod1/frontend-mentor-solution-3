@@ -30,18 +30,19 @@
       </div>
 
       <div class="col-start-4 grid grid-cols-2 gap-4">
-        <img src="images/icon-cart.svg" alt="cart icon" class="self-center cursor-pointer active:scale-50">
+        <img src="images/icon-cart.svg" alt="cart icon" class="cart-icon self-center cursor-pointer active:scale-50">
         <img src="images/image-avatar.png" alt="user profile picture"
           class="w-7 cursor-pointer active:border-4 border-solid border-primary rounded-full">
       </div>
 
-      <div class="cart-card-holder w-full h-screen bg-[rgba(59,174,216,0.5)] absolute top-0">
+      <div
+        class="cart-card-holder w-full h-screen absolute top-0 hidden grid-cols-[0.5rem_1fr_0.5rem] grid-rows-[4.5rem_1fr]">
         <div
-          class="cart-card w-80 h-60 py-4 shadow-2xl rounded-lg bg-neutral1 absolute top-11 right-4 grid grid-rows-[2rem_auto_1fr] grid-cols-[1rem_1fr_1rem]">
-          <h2 class="font-bold text-neutral2 col-start-2">Cart</h2>
+          class="cart-card h-64 py-6 shadow-2xl rounded-lg bg-neutral1 grid grid-rows-[3rem_auto_1fr] grid-cols-[1.5rem_1fr_1.5rem] col-start-2 row-start-2">
+          <h2 class="font-bold text-secondary col-start-2">Cart</h2>
           <hr class="col-span-3">
           <div class="col-start-2 grid place-items-center">
-            <p class="text-neutral2">Your cart is empty.</p>
+            <p class="text-secondary">Your cart is empty.</p>
           </div>
         </div>
       </div>
@@ -75,15 +76,15 @@
     </section>
 
     <section class="col-start-2 grid gap-4 py-4">
-      <h2 class="uppercase text-neutral2Light font-bold items-center">
+      <h2 class="uppercase text-secondaryLight font-bold items-center">
         Sneaker Company
       </h2>
 
-      <h1 class=" text-3xl font-bold text-neutral2">
+      <h1 class=" text-3xl font-bold text-secondary">
         Fall Limited Edition Sneakers
       </h1>
 
-      <p class="text-neutral2Light">
+      <p class="text-secondaryLight">
         These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
@@ -91,76 +92,25 @@
 
     <form class="add-to-cart pb-24 col-start-2 grid gap-4">
       <div class="grid grid-cols-[auto_auto_1fr] items-center justify-start gap-5">
-        <h3 class="text-3xl text-neutral2 font-bold">$125.00</h3>
-        <h4 class="bg-neutral2 text-neutral1 font-bold text-lg py-0 px-3 rounded-md">50%</h4>
-        <p class="text-neutral2Light font-bold text-lg justify-self-end line-through">$250.00</p>
+        <h3 class="text-3xl text-secondary font-bold">$125.00</h3>
+        <h4 class="bg-secondary text-neutral1 font-bold text-lg py-0 px-3 rounded-md">50%</h4>
+        <p class="text-secondaryLight font-bold text-lg justify-self-end line-through">$250.00</p>
       </div>
 
       <div class="h-16 px-6 rounded-lg flex justify-between items-center bg-backup">
         <img src="images/icon-minus.svg" alt="reduce quantity of this product you want to purchase"
           class="reduce-product-number cursor-pointer">
-        <input class="number-of-product outline-none text-center text-neutral2 font-bold text-2xl bg-inherit" value="0"
-          disabled>
+        <input class="number-of-product w-16 outline-none text-center text-secondary font-bold text-2xl bg-inherit"
+          value="0" disabled>
         <img src="images/icon-plus.svg" alt="increase the quantity of this product you want to purchase"
           class="increase-product-number cursor-pointer">
       </div>
 
       <button
-        class="h-16 rounded-lg text-neutral2 text-2xl font-bold text-center flex justify-center items-center bg-primary active:bg-primaryLight"
+        class="h-16 rounded-lg text-secondary text-2xl font-bold text-center flex justify-center items-center bg-primary active:bg-primaryLight"
         style="box-shadow: 0 2rem 2rem hsla(26, 100%, 55%, 0.302);">
         <img src="images/icon-cart.svg" class="mr-4" style="filter: grayscale(100%) brightness(0%);"> Add to cart
       </button>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia excepturi quaerat in quam? Sint libero
-      recusandae maiores dignissimos nobis voluptatem quo sit amet minus cupiditate voluptas, hic odit cumque!
-      Voluptates necessitatibus hic cumque nesciunt, exercitationem, magni id perspiciatis quidem, facere reprehenderit
-      quia pariatur suscipit labore placeat ex cum earum nemo. Sed voluptates soluta nulla possimus maiores nemo dolor
-      illo?
-      Ad corrupti dolorum eius modi quae. Iusto numquam vero nemo, similique natus error aliquid eum ipsum perspiciatis
-      reiciendis praesentium, velit rerum laudantium animi assumenda! Corporis doloremque nemo facere minus sunt.
-      Voluptatem ea aspernatur, tenetur quaerat architecto ratione maxime veritatis consequatur dolor? Culpa, dolorem
-      hic harum ipsa aperiam enim suscipit aliquid. Incidunt qui eaque reiciendis delectus tempore eligendi omnis
-      cupiditate placeat.
-      Dicta harum quidem qui perferendis illo temporibus quasi exercitationem velit facilis mollitia soluta consectetur
-      quaerat, natus nesciunt unde repudiandae laborum, fuga nihil illum, quos quo. Eaque laborum ipsam exercitationem
-      porro.
-      Voluptate consectetur molestiae repellat. Dicta fugit ab voluptatem dolorum quo commodi, voluptatum nobis
-      aspernatur repellendus accusamus ipsam at quaerat quidem, nulla alias laudantium, numquam nesciunt officia ullam
-      magnam enim cum?
-      Delectus aliquam veritatis modi iure sequi porro odit quis illo nobis architecto praesentium consectetur numquam
-      commodi assumenda dolor, autem omnis nostrum explicabo vitae fugiat culpa similique ut deleniti doloribus? Facere!
-      Modi, veniam mollitia ipsam impedit cumque et tempora suscipit totam neque facere odit laboriosam perferendis
-      harum vel natus numquam iste ab debitis quam rerum atque odio ipsa sit. Sit, officiis?
-      Optio similique, eum corrupti, facere est cum quasi eius quae ullam dignissimos natus, culpa doloremque quas at!
-      Esse amet praesentium eum quo ab dolor laboriosam, delectus, quasi totam minus accusantium.
-      Assumenda, dignissimos repellat totam, iusto iure cum suscipit quisquam reiciendis voluptas quidem eaque
-      distinctio illum officiis minus doloribus velit voluptate omnis excepturi in fugiat molestiae minima recusandae
-      inventore. Expedita, explicabo!
-      Ex molestiae praesentium autem impedit sequi, corrupti facere quas. Nisi tempora dolores illo asperiores saepe
-      minus expedita dolor? Hic at ad alias consectetur excepturi aspernatur dolores nemo provident ea assumenda.
-      Non soluta dicta illo doloribus, beatae repudiandae architecto corrupti tempora, eum accusantium repellendus et
-      numquam harum. Totam maiores fugit voluptates distinctio magni, nulla rerum excepturi repellendus repellat cum
-      optio nesciunt.
-      Reprehenderit voluptate esse veritatis aspernatur quae alias enim excepturi quod deserunt. Veniam voluptatem ipsum
-      voluptas, rem natus aspernatur, corrupti impedit veritatis porro eum fuga, quisquam tempora corporis omnis quas
-      sapiente.
-      Qui necessitatibus maxime assumenda molestiae eius illo magnam expedita est voluptas vel nulla dolor, harum sunt
-      vero velit laborum dolores modi sed impedit vitae sit dolorem. Perferendis iusto laboriosam laudantium!
-      Quo ullam asperiores nulla ad possimus, similique architecto fugiat nihil cupiditate placeat, labore doloribus
-      ducimus aspernatur ex! Quidem accusamus officiis eos quasi? Enim obcaecati fuga debitis aperiam qui, repellat
-      dolorum!
-      Pariatur autem incidunt placeat. Rem velit, perspiciatis cum consequatur reiciendis ullam libero, vel praesentium
-      temporibus facilis aperiam iusto cupiditate! Distinctio voluptatum corrupti, eaque consectetur recusandae optio
-      praesentium cum numquam obcaecati.
-      Explicabo impedit perspiciatis blanditiis recusandae quos sed quaerat vero ipsa ipsum nemo, itaque soluta corporis
-      aliquam harum consequuntur, porro veritatis maiores sit odio dolores! Ad eaque magnam reprehenderit hic. Sint.
-      Laborum, ad? Ad non omnis consectetur cum hic ipsa voluptates delectus pariatur eligendi eos eveniet, molestiae
-      nisi, quae doloremque impedit qui. Nobis quasi, ab architecto cum sed eos temporibus quo.
-      Odit doloremque quo suscipit architecto tempora dolore numquam officiis ducimus atque velit modi molestias
-      adipisci ad error ullam magnam id, quibusdam ipsum ab voluptatem, quae quisquam, voluptatibus rem. Accusantium,
-      nobis!
-      Repellendus molestias aut blanditiis asperiores culpa! Mollitia accusamus aspernatur expedita impedit, sapiente
-      eligendi sed. Quod dicta magnam quo officia, illum facilis sit cumque, cupiditate consequuntur placeat
-      consequatur! Dicta, perferendis suscipit!
     </form>
 
 
