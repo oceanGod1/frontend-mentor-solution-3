@@ -12,91 +12,126 @@
 
 <body class="font-main">
   <main
-    class="w-screen pt-16 grid grid-cols-[1rem_1fr_1rem] lg:w-[62.5rem] lg:h-screen lg:m-auto lg:grid-cols-[2rem_1fr_5.5rem_1fr_2rem] items-center">
+    class="w-screen pt-16 grid grid-cols-[1rem_1fr_1rem] lg:h-screen lg:pt-0 lg:grid-cols-[2rem_26.5rem_5.5rem_26.5rem_2rem] justify-center items-center">
 
-    <nav
-      class="w-full h-16 col-start-2 grid grid-cols-[1rem_2rem_1fr_5rem_1rem] items-center fixed top-0 z-10 bg-neutral1 lg:w-[62.5rem] m-auto lg:border-b-[3px] border-b-backup lg:grid-cols-[auto_1fr_5rem] lg:gap-8">
-      <div class="col-start-2 lg:hidden">
-        <img src="images/icon-menu.svg" alt="open mobile menu icon" class="open-mobile-menu">
-      </div>
+    <section class="w-screen h-16 fixed top-0 z-10 lg:h-[5.5rem] lg:grid justify-center">
+      <nav
+        class="w-full h-full grid grid-cols-[1rem_2rem_1fr_5rem_1rem] items-center bg-neutral1 lg:w-[62.5rem] lg:border-b-[3px] border-b-backup lg:grid-cols-[auto_1fr_5rem] lg:gap-8">
+        <div class="col-start-2 lg:hidden">
+          <img src="images/icon-menu.svg" alt="open mobile menu icon" class="open-mobile-menu">
+        </div>
 
-      <div class="col-start-3 lg:col-start-1">
-        <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg">
+        <div class="col-start-3 lg:col-start-1">
           <a href="index.html">
-            <path
-              d="M8.217 20c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.35-.053c-2.7-.405-3.18-.788-3.18-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.281v-.133c0-2.389-1.35-5.238-7.774-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.223 4.675.21.028.433.054.659.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.797 0-3.784-.593-3.784-1.92v-.134H.002L0 14.926v.317c.008.79.118 1.913 1.057 2.862C2.303 19.362 4.712 20 8.217 20Zm13.21 0v-7.49c0-2.104.547-4.423 4.176-4.423 3.915 0 3.778 2.777 3.768 4.042V20h4.18v-7.768c0-2.264-.176-7.766-6.732-7.766-2.778 0-4.192.911-5.195 2.28h-.197V4.467H17.22V20h4.207Zm21.959 0c5.094 0 7.787-2.07 8.217-5.405H47.53c-.386 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.056-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.099-9.574h-8.188c.486-1.574 1.764-2.431 4.089-2.431 2.994 0 3.755 1.267 4.099 2.431ZM70.499 20V4.457H66.29V6.74h-.176c-1.053-1.377-2.809-2.283-5.677-2.283-6.433 0-7.225 5.293-7.253 7.635v.137c0 2.092.732 7.771 7.241 7.771 2.914 0 4.684-.818 5.734-2.169h.131V20H70.5Zm-8.854-3.623c-3.996 0-4.447-3.032-4.447-4.148 0-1.21.426-4.148 4.455-4.148 3.631 0 4.374 2.044 4.374 4.148 0 2.35-.742 4.148-4.382 4.148ZM88.826 20l-6.529-9.045 6.588-6.488h-5.827l-6.836 6.756V0h-4.187v19.954h4.187V16.94l3.02-2.976L83.6 20h5.226Zm9.9 0c5.094 0 7.786-2.07 8.217-5.405h-4.074c-.387 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.057-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.098-9.574h-8.187c.485-1.574 1.763-2.431 4.089-2.431 2.994 0 3.755 1.267 4.098 2.431ZM112.76 20v-6.97c0-2.103.931-4.542 4.05-4.542 1.33 0 2.393.236 2.785.346l.67-3.976c-.728-.16-1.626-.392-2.757-.392-2.665 0-3.622.794-4.486 2.282h-.262V4.466h-4.21V20h4.21Zm17.221 0c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.349-.053c-2.701-.405-3.181-.788-3.181-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.282v-.133c0-2.389-1.35-5.238-7.775-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.224 4.675.21.028.432.054.658.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.796 0-3.784-.593-3.784-1.92v-.134h-4.319l-.001.301v.317c.008.79.117 1.913 1.056 2.862 1.246 1.257 3.655 1.895 7.16 1.895Z"
-              fill="#1D2026" fill-rule="nonzero" />
+            <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.217 20c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.35-.053c-2.7-.405-3.18-.788-3.18-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.281v-.133c0-2.389-1.35-5.238-7.774-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.223 4.675.21.028.433.054.659.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.797 0-3.784-.593-3.784-1.92v-.134H.002L0 14.926v.317c.008.79.118 1.913 1.057 2.862C2.303 19.362 4.712 20 8.217 20Zm13.21 0v-7.49c0-2.104.547-4.423 4.176-4.423 3.915 0 3.778 2.777 3.768 4.042V20h4.18v-7.768c0-2.264-.176-7.766-6.732-7.766-2.778 0-4.192.911-5.195 2.28h-.197V4.467H17.22V20h4.207Zm21.959 0c5.094 0 7.787-2.07 8.217-5.405H47.53c-.386 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.056-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.099-9.574h-8.188c.486-1.574 1.764-2.431 4.089-2.431 2.994 0 3.755 1.267 4.099 2.431ZM70.499 20V4.457H66.29V6.74h-.176c-1.053-1.377-2.809-2.283-5.677-2.283-6.433 0-7.225 5.293-7.253 7.635v.137c0 2.092.732 7.771 7.241 7.771 2.914 0 4.684-.818 5.734-2.169h.131V20H70.5Zm-8.854-3.623c-3.996 0-4.447-3.032-4.447-4.148 0-1.21.426-4.148 4.455-4.148 3.631 0 4.374 2.044 4.374 4.148 0 2.35-.742 4.148-4.382 4.148ZM88.826 20l-6.529-9.045 6.588-6.488h-5.827l-6.836 6.756V0h-4.187v19.954h4.187V16.94l3.02-2.976L83.6 20h5.226Zm9.9 0c5.094 0 7.786-2.07 8.217-5.405h-4.074c-.387 1.02-1.63 1.72-4.143 1.72-2.721 0-3.962-1.03-4.25-3.106h12.527c.24-2.13-.029-5.417-3.026-7.44v.005c-1.312-.915-3.057-1.465-5.251-1.465-5.24 0-8.336 2.772-8.336 7.845 0 5.17 3.02 7.846 8.336 7.846Zm4.098-9.574h-8.187c.485-1.574 1.763-2.431 4.089-2.431 2.994 0 3.755 1.267 4.098 2.431ZM112.76 20v-6.97c0-2.103.931-4.542 4.05-4.542 1.33 0 2.393.236 2.785.346l.67-3.976c-.728-.16-1.626-.392-2.757-.392-2.665 0-3.622.794-4.486 2.282h-.262V4.466h-4.21V20h4.21Zm17.221 0c4.761 0 7.519-.753 7.519-4.606 0-3.4-3.38-4.172-6.66-4.682l-.56-.085-.279-.041-.349-.053c-2.701-.405-3.181-.788-3.181-1.471 0-.478.49-1.331 2.843-1.331 2.455 0 3.493.647 3.493 1.87v.134h4.282v-.133c0-2.389-1.35-5.238-7.775-5.238-5.952 0-7.201 2.584-7.201 4.752 0 3.097 2.763 4.086 7.224 4.675.21.028.432.054.658.081 1.669.197 3.172.42 3.172 1.585 0 1.01-1.615 1.222-3.298 1.222-2.796 0-3.784-.593-3.784-1.92v-.134h-4.319l-.001.301v.317c.008.79.117 1.913 1.056 2.862 1.246 1.257 3.655 1.895 7.16 1.895Z"
+                fill="#1D2026" fill-rule="nonzero" />
+            </svg>
           </a>
-        </svg>
-      </div>
-
-      <section
-        class="mobile-menu hidden w-screen h-screen bg-neutral2Light fixed top-0 left-0 z-20 lg:block lg:w-[30rem] lg:h-full lg:bg-inherit lg:static">
-        <div class="w-[67%] h-screen pt-24 pl-4 bg-neutral1 lg:w-full lg:h-full lg:p-0 lg:bg-inherit">
-          <img src="images/icon-close.svg" alt="close mobile menu icon"
-            class="close-mobile-menu absolute top-6 left-4 lg:hidden">
-          <nav class="w-full h-40 grid gap-4 lg:h-full lg:grid-flow-col lg:place-items-center">
-            <a class="text-secondary font-bold text-lg lg:font-normal lg:text-secondaryLight" href="#">Collections</a>
-            <a class="text-secondary font-bold text-lg lg:font-normal lg:text-secondaryLight" href="#">Men</a>
-            <a class="text-secondary font-bold text-lg lg:font-normal lg:text-secondaryLight" href="#">Women</a>
-            <a class="text-secondary font-bold text-lg lg:font-normal lg:text-secondaryLight" href="#">About</a>
-            <a class="text-secondary font-bold text-lg lg:font-normal lg:text-secondaryLight" href="#">Contact</a>
-          </nav>
         </div>
-      </section>
 
-      <figure class="col-start-4 grid grid-cols-2 gap-4">
-        <div class="cart-icon self-center cursor-pointer relative active:scale-50">
-          <img src="images/icon-cart.svg" alt="cart icon">
-          <p class="cart-badge hidden px-4 rounded-xl text-neutral1 text-xl bg-primary absolute bottom-1 scale-50">
-            0</p>
-        </div>
-        <img src="images/image-avatar.png" alt="user profile picture"
-          class="w-7 cursor-pointer active:border-4 border-solid border-primary rounded-full">
-      </figure>
+        <section
+          class="mobile-menu hidden w-screen h-screen bg-neutral2Light fixed top-0 left-0 z-20 lg:block lg:w-[23rem] lg:h-full lg:bg-inherit lg:static">
+          <div class="w-[67%] h-screen pt-24 pl-4 bg-neutral1 lg:w-full lg:h-full lg:p-0 lg:bg-inherit">
+            <img src="images/icon-close.svg" alt="close mobile menu icon"
+              class="close-mobile-menu absolute top-6 left-4 lg:hidden">
+            <nav
+              class="w-full h-40 grid gap-4 lg:h-full lg:grid-cols-[5rem_2.5rem_4rem_3rem_4rem] lg:place-items-center">
+
+              <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary hover:border-y-4 border-solid border-transparent border-b-primary"
+                href="#">Collections</a>
+              <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary hover:border-y-4 border-solid border-transparent border-b-primary"
+                href="#">Men</a>
+              <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary hover:border-y-4 border-solid border-transparent border-b-primary"
+                href="#">Women</a>
+              <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary hover:border-y-4 border-solid border-transparent border-b-primary"
+                href="#">About</a>
+              <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary hover:border-y-4 border-solid border-transparent border-b-primary"
+                href="#">Contact</a>
+
+            </nav>
+          </div>
+        </section>
+
+        <figure class="col-start-4 grid grid-cols-2 gap-4">
+          <div class="cart-icon self-center cursor-pointer relative active:scale-50">
+            <img src="images/icon-cart.svg" alt="cart icon">
+            <p class="cart-badge hidden px-4 rounded-xl text-neutral1 text-xl bg-primary absolute bottom-1 scale-50">
+              0</p>
+          </div>
+          <img src="images/image-avatar.png" alt="user profile picture"
+            class="w-7 cursor-pointer active:border-4 border-solid border-primary rounded-full">
+        </figure>
+      </nav>
 
       <div
-        class="cart-card-holder w-full h-screen absolute top-0 hidden grid-cols-[0.5rem_1fr_0.5rem] grid-rows-[4.5rem_auto_1fr]">
+        class="cart-card-holder hidden w-full h-screen absolute top-0 grid-cols-[0.5rem_1fr_0.5rem] grid-rows-[4.5rem_auto_1fr] lg:grid-cols-[1fr_62.5rem_1fr] lg:grid-rows-[4.5rem_auto_1fr] lg:justify-items-end">
         <div
-          class="cart-card py-6 shadow-2xl rounded-lg bg-neutral1 grid grid-rows-[1rem_auto_1fr] grid-cols-[1.5rem_1fr_1.5rem] gap-y-6 col-start-2 row-start-2">
+          class="cart-card py-6 shadow-2xl rounded-lg bg-neutral1 grid grid-rows-[1rem_auto_1fr] grid-cols-[1.5rem_1fr_1.5rem] gap-y-6 col-start-2 row-start-2 lg:w-[22rem] lg:transform lg:translate-x-[4.5rem]">
           <h2 class="font-bold text-secondary col-start-2">Cart</h2>
           <hr class="col-span-3">
           <div class="cart-content col-start-2 grid gap-6">
-            <p class="empty-cart-message py-[3.6rem] text-secondary self-center justify-self-center">Your cart is empty.
+            <p class="empty-cart-message py-[3.6rem] text-secondary self-center justify-self-center">Your cart is
+              empty.
             </p>
-
           </div>
         </div>
-
-    </nav>
-    <section
-      class="product-image-holder h-[80vw] col-span-3 grid grid-cols-[1rem_auto_1fr_auto_1rem] overflow-hidden relative lg:h-[26rem] lg:col-start-2 lg:col-span-1">
-
-      <figure class="product w-full h-full absolute lg:rounded-xl"
-        style="background: url(images/image-product-1.jpg) center/cover;">
-      </figure>
-
-      <figure class="product w-full h-full absolute right-full lg:rounded-xl"
-        style="background: url(images/image-product-2.jpg) center/cover;">
-      </figure>
-
-      <figure class="product w-full h-full absolute right-full lg:rounded-xl"
-        style="background: url(images/image-product-3.jpg) center/cover;">
-      </figure>
-
-      <figure class="product w-full h-full absolute right-full lg:rounded-xl"
-        style="background: url(images/image-product-4.jpg) center/cover;">
-      </figure>
-
-      <input type="image" src="images/icon-previous.svg" alt="go to previous image icon"
-        class="go-to-previous-image w-3 h-3 p-3 box-content col-start-2 rounded-full self-center bg-neutral1 relative">
-
-      <input type="image" src="images/icon-next.svg" alt="go to next image icon"
-        class="go-to-next-image w-3 h-3 p-3 box-content col-start-4 rounded-full self-center bg-neutral1 relative">
+      </div>
     </section>
 
-    <section class="col-start-2 lg:col-start-4">
+    <section
+      class="h-[80vw] col-span-3 grid lg:h-[29.5rem] lg:col-start-2 lg:col-span-1 lg:grid-rows-[24rem_5.5rem] lg:gap-[1.4rem]">
 
+      <div class="product-image-holder grid grid-cols-[1rem_auto_1fr_auto_1rem] overflow-hidden relative">
+
+        <figure class="product w-full h-full absolute lg:rounded-xl"
+          style="background: url(images/image-product-1.jpg) center/cover;">
+        </figure>
+
+        <figure class="product w-full h-full absolute right-full lg:rounded-xl"
+          style="background: url(images/image-product-2.jpg) center/cover;">
+        </figure>
+
+        <figure class="product w-full h-full absolute right-full lg:rounded-xl"
+          style="background: url(images/image-product-3.jpg) center/cover;">
+        </figure>
+
+        <figure class="product w-full h-full absolute right-full lg:rounded-xl"
+          style="background: url(images/image-product-4.jpg) center/cover;">
+        </figure>
+
+        <input type="image" src="images/icon-previous.svg" alt="go to previous image icon"
+          class="go-to-previous-image w-3 h-3 p-3 box-content col-start-2 rounded-full self-center bg-neutral1 relative lg:hidden">
+
+        <input type="image" src="images/icon-next.svg" alt="go to next image icon"
+          class="go-to-next-image w-3 h-3 p-3 box-content col-start-4 rounded-full self-center bg-neutral1 relative lg:hidden">
+      </div>
+
+      <div class="hidden lg:grid grid-flow-col justify-between">
+        <figure class="w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden cursor-pointer">
+          <img src="images/image-product-1-thumbnail.jpg" alt="product 1 thumbnail"
+            class="w-full hover:filter hover:brightness-[1.5] hover:contrast-[0.8] hover:saturate-[0.6]">
+        </figure>
+
+        <figure class="w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden cursor-pointer">
+          <img src="images/image-product-2-thumbnail.jpg" alt="product 1 thumbnail"
+            class="w-full hover:filter hover:brightness-[1.5] hover:contrast-[0.8] hover:saturate-[0.6]">
+        </figure>
+
+        <figure class="w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden cursor-pointer">
+          <img src="images/image-product-3-thumbnail.jpg" alt="product 1 thumbnail"
+            class="w-full hover:filter hover:brightness-[1.5] hover:contrast-[0.8] hover:saturate-[0.6]">
+        </figure>
+
+        <figure class="w-[5.5rem] h-[5.5rem] rounded-lg overflow-hidden cursor-pointer">
+          <img src="images/image-product-4-thumbnail.jpg" alt="product 1 thumbnail"
+            class="w-full hover:filter hover:brightness-[1.5] hover:contrast-[0.8] hover:saturate-[0.6]">
+        </figure>
+      </div>
+    </section>
+
+    <section class="col-start-2 lg:col-start-4 self">
       <header class="grid gap-4 py-4">
         <h2 class="uppercase text-secondaryLight font-bold items-center">
           Sneaker Company
@@ -131,7 +166,7 @@
         </div>
 
         <button
-          class="h-16 rounded-lg shadow-custom-shadow text-secondary text-2xl font-bold text-center flex justify-center items-center bg-primary active:bg-primaryLight lg:shadow-none lg:col-span-3">
+          class="h-16 rounded-lg shadow-custom-shadow text-secondary text-2xl font-bold text-center flex justify-center items-center bg-primary hover:bg-primaryLight active:bg-primaryLight lg:shadow-none lg:col-span-3">
           <img src=" images/icon-cart.svg" class="mr-4" style="filter: grayscale(100%) brightness(0%);"> Add to cart
         </button>
       </form>
@@ -169,3 +204,5 @@
   </div>
 </div>
 <button class="h-16 rounded-xl text-secondary font-bold bg-primary">Checkout</button> -->
+
+<!-- active:border-4 border-solid border-primary -->
