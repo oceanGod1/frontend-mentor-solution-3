@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "**/*.{html,js"],
+  content: ["index.html", "app.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -31,9 +31,11 @@ module.exports = {
         "primary-filter":
           "invert(60%) sepia(90%) saturate(500%) hue-rotate(0deg) brightness(95%) contrast(100%)",
       },
+      position: {
+        "left-end": "100%"
+      }
     },
   },
   plugins: [require("tailwindcss-filters")],
 };
 
-// - Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
