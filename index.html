@@ -28,7 +28,7 @@
         </div>
 
         <section class="mobile-menu hidden w-screen h-screen fixed top-0 left-0 z-20 lg:block lg:w-[23rem] lg:h-full lg:bg-inherit lg:static">
-          <div class="menu-cutton w-[67%] h-screen pt-24 pl-4 bg-neutral1 relative lg:w-full lg:h-full lg:p-0 lg:bg-inherit">
+          <div class="menu-curtain w-[67%] h-screen pt-24 pl-4 bg-neutral1 relative lg:w-full lg:h-full lg:p-0 lg:bg-inherit">
             <img src="images/icon-close.svg" alt="close mobile menu icon" class="close-mobile-menu absolute top-6 left-4 lg:hidden">
             <nav class="w-full h-40 grid gap-4 lg:h-full lg:grid-cols-[5rem_2.5rem_4rem_3rem_4rem] lg:place-items-center">
               <a class="text-secondary font-bold text-lg lg:h-full lg:text-base lg:font-normal lg:text-secondaryLight lg:grid lg:items-center hover:text-secondary lg:hover:border-y-4 border-solid border-transparent border-b-primary" href="#">Collections</a>
@@ -49,16 +49,13 @@
         </figure>
       </nav>
 
-      <div class="cart-card-holder hidden w-full h-screen absolute top-0 grid-cols-[0.5rem_1fr_0.5rem] grid-rows-[4.5rem_auto_1fr] lg:grid-cols-[1fr_62.5rem_1fr] lg:grid-rows-[4.5rem_auto_1fr] lg:justify-items-end">
-        <div class="cart-card py-6 shadow-2xl rounded-lg bg-neutral1 grid grid-rows-[1rem_auto_1fr] grid-cols-[1.5rem_1fr_1.5rem] gap-y-6 col-start-2 row-start-2 lg:w-[22rem] lg:transform lg:translate-x-[4.5rem]">
-          <h2 class="font-bold text-secondary col-start-2">Cart</h2>
-          <hr class="col-span-3">
-          <div class="cart-content col-start-2 grid gap-6">
-            <p class="empty-cart-message py-[3.6rem] text-secondary self-center justify-self-center">Your cart is empty.</p>
-          </div>
+      <div class="cart-card hidden w-[95%] py-6 shadow-2xl rounded-lg bg-neutral1 absolute top-[4.5rem] right-1/2 translate-x-1/2 grid-rows-[1rem_auto_1fr] grid-cols-[1.5rem_1fr_1.5rem] gap-y-6 lg:w-[22rem] lg:right-0 lg:-translate-x-[10%] xl:-translate-x-1/2">
+        <h2 class="font-bold text-secondary col-start-2">Cart</h2>
+        <hr class="col-span-3">
+        <div class="cart-content col-start-2 grid gap-6">
+          <p class="empty-cart-message py-[3.6rem] text-secondary self-center justify-self-center">Your cart is empty.</p>
         </div>
       </div>
-
     </section>
     
     <section class="product-image-section h-[80vw] col-span-3 grid lg:h-[33.5rem] lg:col-start-2 lg:col-span-1 lg:grid-rows-[26rem_5.5rem] lg:gap-[1.4rem]">
@@ -69,11 +66,11 @@
 
       <div class="product-image-container overflow-hidden flex justify-between relative row-start-1 row-span-1 col-start-1 col-span-1 lg:rounded-2xl">
         
-        <button class="go-to-previous-image w-10 h-10 ml-4 p-2 rounded-full bg-neutral1 col-start-2 self-center grid place-items-center lg:hidden lg:ml-0 lg:-translate-x-5 lg:scale-[1.4] lg:col-start-1 lg:row-start-2 lg:justify-self-start disabled:bg-[#ffffff80]">
+        <button class="go-to-previous-image w-10 h-10 ml-4 p-2 rounded-full bg-neutral1 col-start-2 self-center grid place-items-center lg:hidden lg:ml-0 lg:mt-[3rem] lg:-translate-x-5 lg:scale-[1.4] lg:col-start-1 lg:row-start-2 lg:justify-self-start disabled:bg-[#ffffff80]">
           <img src="images/icon-previous.svg" alt="go to previous image icon">
         </button>
         
-        <button class="go-to-next-image w-10 h-10 mr-4 p-2 rounded-full bg-neutral1 col-start-4 self-center grid place-items-center lg:hidden lg:mr-0 lg:translate-x-5 lg:scale-[1.4] disabled:bg-[#ffffff80]">
+        <button class="go-to-next-image w-10 h-10 mr-4 p-2 rounded-full bg-neutral1 col-start-4 self-center grid place-items-center lg:hidden lg:mr-0 lg:mt-[3rem] lg:translate-x-5 lg:scale-[1.4] disabled:bg-[#ffffff80]">
           <img src="images/icon-next.svg" alt="go to next image icon">
         </button>
       </div>
@@ -123,6 +120,9 @@
       </form>
     </section>
   </main>
+  <div class="item-added-success-message hidden w-screen opacity-0 duration-300 ease-in fixed top-20 z-20">
+    <p class="w-80 m-auto p-4 rounded-xl text-center text-neutral1 font-bold bg-green-600">Item successfully added to cart</p>
+  </div>
   <div class="backdrop hidden w-screen h-screen bg-neutral2Light fixed top-0 left-0 z-50 grid-cols-[1fr_32rem_1fr] content-center justify-center"></div>
   <script src="app.js"></script>
 </body>
