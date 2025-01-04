@@ -122,7 +122,7 @@ const reusables = {
 
   // Switch Thumbnail Highlight During Scroll
   highlightThumbnail: function (thumbnails, method) {
-    thumbnails.filter((value) =>
+    thumbnails.filter(value =>
       value !== method()
         ? value.classList.remove("before:absolute", "border-4")
         : value.classList.add("before:absolute", "border-4")
@@ -283,20 +283,18 @@ const reusables = {
       </div>
       `
     );
-    document
-      .querySelector(".delete-cart-item")
-      .addEventListener("click", (e) => {
-        // console.log(e.target.parentElement.parentElement.childElementCount)
-        if (e.target.parentElement.parentElement.childElementCount <= 2) {
-          document
-            .querySelector(".empty-cart-message")
-            .classList.remove("hidden");
-          document.querySelector(".checkout-button").remove();
-        }
-        delete cartItems[`${productID}`];
-        e.target.parentElement.remove();
-        reusables.cartBadgeState();
-      });
+    document.querySelector(".delete-cart-item").addEventListener("click", e => {
+      if (e.target.parentElement.parentElement.childElementCount <= 2) {
+        document
+          .querySelector(".empty-cart-message")
+          .classList.remove("hidden");
+        document.querySelector(".checkout-button").remove();
+        cartContent.classList.remove("not-empty");
+      }
+      delete cartItems[`${productID}`];
+      e.target.parentElement.remove();
+      reusables.cartBadgeState();
+    });
   },
 
   // Success Message
@@ -429,7 +427,7 @@ const applyScrollWithThumbnails = (() => {
     productThumbnailIndex,
     productImageContainer,
   } = selectedElemennts;
-  productThumbnailIndex.forEach((thumbnail) => {
+  productThumbnailIndex.forEach(thumbnail => {
     reusables.scrollWithThumbnail(
       thumbnail,
       productThumbnailIndex,
@@ -530,7 +528,7 @@ activateImageClone.addEventListener("click", () => {
   );
 
   // Scroll Product Images With Cloned Thumbnails
-  clonedProductThumbnailIndex.forEach((thumbnail) => {
+  clonedProductThumbnailIndex.forEach(thumbnail => {
     reusables.scrollWithThumbnail(
       thumbnail,
       clonedProductThumbnailIndex,
@@ -577,7 +575,7 @@ const applyProductQuantityState = (() => {
 const addToCartButtonOnClick = (() => {
   const { productQuantity, addToCart, cartContent, productID } =
     selectedElemennts;
-  addToCart.addEventListener("submit", (e) => {
+  addToCart.addEventListener("submit", e => {
     e.preventDefault();
     if (
       productQuantity.value >= 1 &&
